@@ -23,12 +23,12 @@ const change = () => {
 
 const fahrToCelc = () => {
 	fahrenheit = converter.value * 1.8 + 32
-	result.textContent = `${converter.value}°C to ${fahrenheit.toFixed(1)}°F`
+	result.textContent = `${converter.value}°C is ${fahrenheit.toFixed(1)}°F`
 	converter.value = ''
 }
 const celcToFahr = () => {
 	celsius = (converter.value - 32) / 1.8
-	result.textContent = `${converter.value}°F to ${celsius.toFixed(1)}°C`
+	result.textContent = `${converter.value}°F is ${celsius.toFixed(1)}°C`
 	converter.value = ''
 }
 const convertion = () => {
@@ -39,7 +39,7 @@ const convertion = () => {
 			celcToFahr()
 		}
 	} else {
-		result.textContent = 'Podaj wartość'
+		result.textContent = 'Enter value'
 	}
 }
 const reset = () => {
